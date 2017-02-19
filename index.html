@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Boulangerie</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+        <!-- code récupéré sur bootstrap pour la barre de navigation puis adapté -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+        <!-- les classes ci-dessus sont des classes bootstrap sauf la dernière qui nous permet
+        via le CSS de modifier le comportement par défaut de bootstrap -->
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">The Boulangerie</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <!--  dans ce qu'on a copié de bootstrap cela permet d'afficher des menus dans la navbar
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            -->
+
+            <!--  dans ce qu'on a copié de bootstrap cela permet d'afficher un formulaire
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            -->
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Commander</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Suivez nous <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://facebook.com/maboulangerie"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="http://twitter.com/maboulangerie"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="http://instagram.com/maboulangerie"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="http://youtube.com/maboulangerie"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <!-- fin du code récupéré sur bootstrap pour la barre de navigation -->
+     
+      <div id="wrapper">
+        <h1>De bons pains, pâtisseries et autres ...</h1>
+        <button type="button" class="btn btn-warning">Commander</button>
+      </div> 
+
+      <div class="spacer"></div> <!-- permet de mettre de l'espace au dessus des fonctions -->
+
+        <div class="container text-center"> <!-- container bootstrap, on utilise également la classe 
+        bootstrap text-center qui permet de tout centrer dans le container -->
+          <div class="row">     <!-- row bootstrap -->
+
+            <div class="col-sm-6 col-md-3 feature circle">
+              <img src="images/noun_706535_cc.png" alt="Pain" width="100" class="circle">
+              <p>Pains traditionnels et baguettes</p>
+            </div>
+
+            <div class="col-sm-6 col-md-3 feature circle">
+              <img src="images/noun_557_cc.png" alt="Pâtisserie" width="100" class="circle">
+              <p>Pâtisseries sur commande</p>
+            </div>
+            
+            <div class="col-sm-6 col-md-3 feature circle">    
+              <img src="images/noun_773502_cc.png" alt="Livraison" width="100" class="circle">
+              <p>Livraison possible de vos commandes <strong>à domicile</strong></p>
+            </div>
+            
+            <div class="col-sm-6 col-md-3 feature circle">    
+              <img src="images/noun_713559_cc.png" alt="Paiement bancaire" width="100" class="circle">
+              <p>Pas de monnaie ? Pas de problème - paiement <strong>possible </strong> avec votre CB</p>
+            </div>
+
+          </div>
+
+        <div class="spacer"></div> <!-- permet de mettre de l'espace sous les fonctions -->
+
+        <div id="footer">
+          <div class="container"> <!-- container bootstrap -->
+            <div class="row">     <!-- row bootstrap -->
+              <div class="col-xs-6 col-md-3">
+                <ul class="list-inline social">
+                  <li>
+                    <a href="http://facebook.com/maboulangerie"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="http://twitter.com/maboulangerie"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </li>   
+                  <li>
+                    <a href="http://instagram.com/maboulangerie"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="http://youtube.com/maboulangerie"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-xs-6 col-md-9">
+                <p>
+                  The Boulangerie <i class="fa fa-trademark" aria-hidden="true"></i>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
