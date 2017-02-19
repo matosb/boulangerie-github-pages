@@ -4,6 +4,7 @@ body {
 
 #footer {
 	background-color: black;
+	background-size: cover;
 	color: #aaaaaa;
 	padding-top: 3em; /* em signifie la hauteur d'une ligne de texte standard */
 	padding-bottom: 3em;

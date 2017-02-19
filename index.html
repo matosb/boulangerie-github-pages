@@ -40,36 +40,6 @@
             <a class="navbar-brand" href="#">The Boulangerie</a>
           </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <!--  dans ce qu'on a copié de bootstrap cela permet d'afficher des menus dans la navbar
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            -->
-
-            <!--  dans ce qu'on a copié de bootstrap cela permet d'afficher un formulaire
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            -->
-
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Commander</a></li>
               <li class="dropdown">
@@ -87,8 +57,56 @@
      
       <div id="wrapper">
         <h1>De bons pains, pâtisseries et autres ...</h1>
-        <button type="button" class="btn btn-warning">Commander</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#orderform">
+          Commander
+        </button>
       </div> 
+
+
+      <!-- on prend la structure d'une modal dans bootstrap qu'on va adapter pour y insérer le code 
+      géénré dans wufoo -->  
+      <!-- Modal -->
+      <div class="modal fade" id="orderform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Commandez</h4>
+            </div> 
+            <div class="modal-body">
+              <!-- ici on insère le code généré dans wufoo pour le formulaire -->
+              <div id="wufoo-mchcmsc0xix912">
+              Fill out my <a href="https://breadme.wufoo.com/forms/mchcmsc0xix912">online form</a>.
+              </div>
+              <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Use <a href="http://www.wufoo.com/partners/">Wufoo integrations</a> and get your data to your favorite apps.</div>
+              <script type="text/javascript">var mchcmsc0xix912;(function(d, t) {
+              var s = d.createElement(t), options = {
+              'userName':'breadme',
+              'formHash':'mchcmsc0xix912',
+              'autoResize':true,
+              'height':'401',
+              'async':true,
+              'host':'wufoo.com',
+              'header':'show',
+              'ssl':true};
+              s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+              s.onload = s.onreadystatechange = function() {
+              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+              try { mchcmsc0xix912 = new WufooForm();mchcmsc0xix912.initialize(options);mchcmsc0xix912.display(); } catch (e) {}};
+              var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+              })(document, 'script');</script>
+              <!-- fin du code wufoo -->
+
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- fin du code bootstrap pour le code du modal dans lequel on a inséré le formaulaire wufoo -->
 
       <div class="spacer"></div> <!-- permet de mettre de l'espace au dessus des fonctions -->
 
