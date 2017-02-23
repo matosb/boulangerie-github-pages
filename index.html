@@ -34,7 +34,7 @@
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-92537528-1'); /* En réalité il faut remplacer le UA-1-1 par le bon code donné à la création dans GA */
+      ga('create', 'UA-92537528-1'); 
       ga('send', 'pageview');
       </script>
 
@@ -61,7 +61,7 @@
           </div>
 
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Commander</a></li>
+              <li><a href="#" onclick="ga('send', 'event', 'category', 'action');">Commander</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Suivez nous <span class="caret"></span></a>
                 <ul class="dropdown-menu">
